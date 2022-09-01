@@ -2,9 +2,23 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: white;
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+
+
+.offset::before{
+    display: block;
+    content: "";
+    height: 5.5em;
 }
 
 .navbar{
@@ -16,6 +30,10 @@ body{
     padding: 20px 0px ;
 }
 
+.text-my-own-color{
+    color: rgb(255, 255, 255);
+}
+
 .navbar-dark .navbar-nav  .nav-link{
     color: #fff;
     padding-left: 20px;
@@ -23,30 +41,30 @@ body{
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
-    color: #1ebba3;
+    color: #6a0303;
 }
+
+ul.nav a:hover { color: rgb(141, 5, 5) !important; }
 
 .heading-content{
     position:absolute;
-    top: 50%;
+    top: 40%;
     width: 100%;
     max-width: 100%;
 }
 
 .heading-content h5{
     font-size: 2em;
-    font-weight: 300;
-    color:#fff;
-    font-family: monospace;
-    /* -webkit-text-stroke-width: 0.02em;
-    -webkit-text-stroke-color: black; */
+    font-weight: bolder;
+    color:rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
     
 }
 
 .heading-content h1{
-    font-size: 4em;
+    font-size: 8em;
     font-weight: bolder;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -54,11 +72,17 @@ body{
 .heading-content P{
     font-size: 1.5em;
     font-weight: bolder;
-    color: #fff;
-    font-family: monospace;
+    color: rgb(255, 255, 255);
+    
 }
 
 /* ---------------------about start */
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
 #about .btn{
     border: 2px solid transparent;
     width: 40px;
@@ -66,6 +90,7 @@ body{
     background: #000;
     border-radius: 5px;
     margin-top: 10px;
+    border-color: #fff;
 }
 
 #about .btn a{
@@ -74,9 +99,67 @@ body{
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
+    
 }
 
 #about .btn:hover{
     border: 2px solid #1ebba3;
     cursor: pointer;
 }
+
+/*------------ service start----- */
+
+#service .button{
+    border: 2px solid transparent;
+    width: 40px;
+    padding: 15px 22px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-color: #fff;
+}
+
+#service .button a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#service .button:hover{
+    border: 2px solid #1ebba3;
+    cursor: pointer;
+}
+
+.footer{
+    background-image: url(ameer-basheer-Fp5zvsgwu44-unsplash.jpg);
+    
+}
+
+/* newsletter=-----------*/
+/* 
+.sec1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f8fafb;
+}
+
+.sec1 h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+.sec1 p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+} */
+
+/* news end--------- */
+
+
