@@ -7,29 +7,29 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-  
+    <script src="js1.js"></script>
     
 </head>
-<body>
-<div>
+<body data-spy="scroll" data-bs-target="#navbarResponsive">
+ <div id="home">
 <!-- Nav bar start-->
-        <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navba-dark bg-dark fixed-top">
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <div class="collapse navbar-collapse" id="#navbarResponsive">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
+                  <li class="nav-item active">
+                    <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Notes</a>
+                    <a class="nav-link text-white" href="#service">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link text-white" href="#about">About</a>
                   </li>                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link text-white" href="#contact">Contact</a>
                   </li>
                   </li>
                 </ul>
@@ -40,36 +40,38 @@
 
 <!-- Background Start -->
         <div class="background">
-            <img src="UVCE_Home9.jpg" class="img-fluid">
+            <img src="ameer-basheer-gV6taBJuBTk-unsplash.jpg" width="1892" height="1147" class="img-fluid">
         </div>
         <div class="heading-content text-center" >
-            <h5>Hello! this is</h5>
-            <h1>
-                UNIVERSITY VISVESVARAYA COLLEGE OF ENGINEERING
+            <h5>Hello! We are</h5>
+            <h1>LOPHELIA
             </h1>
             <p>
-                Here you can find notes of your respective branches
+                Your one stop for IT
             </p>
 
 </div>
 <!-- Bacground End -->
 
+<button class="mx-auto" onclick="myFunction()" >Toggle dark mode</button>
+
 
 <!----About Start-->
-<div id="about" class="container mt-3 mb-0">
+<div id="about" class="offset container mt-3 mb-0 ">
+    
     <div class="post-heading text-center">
 
     <h3 class="display-4 font-weight-bold">
-        About This
+        About Us
     </h3>
-    <hr class="w-50 mx-auto pb-5">
+    <hr class="w-50 mx-auto pb-1">
     </div>
     <div class="row">
         <div class="col-lg-6 col-md-6 col-12">
-            <img src="UVCE_Home9.jpg" class="img-fluid">
+            <img src="isometric-people-working-with-technology_52683-19078.webp" class="img-fluid">
         </div>
         <div class="col-lg-6 col-md-6 col-12">
-            <h2>Wanna Know About this?</h2>
+            <h2>Wanna Know More About us?</h2>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut praesentium ipsa explicabo veritatis incidunt minus sequi possimus perferendis deleniti, voluptas necessitatibus dolorum recusandae quas nihil, laboriosam aliquid? Praesentium, eum saepe.</p>
              <button class="btn w-50">
@@ -85,12 +87,80 @@
 <!-- About End --> -->
 
 <!----Service Start-->
-    <div id="service" class="container mt-3 mb-0">
+    <div id="service" class="offset container mt-3 mb-0">
         <div class="post-heading text-center">
             <h3 class="display-4 font-weight-bold">
-              service
+              Services
             </h3>
-            <hr class="w-50 mx-auto pb-5">
+            <hr class="w-50 mx-auto pb-1">
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-12 pb-5">
+                    <div class="card" >
+                        <img src="service1.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Buisness</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pb-5">
+                    <div class="card">
+                        <img src="service2.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Buisness</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pb-5">
+                    <div class="card">
+                        <img src="service3.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Buisness</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pb-5">
+                    <div class="card" >
+                        <img src="service3.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Buisness</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pb-5">
+                    <div class="card" >
+                        <img src="service5.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Buisness</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pb-5">
+                    <div class="card" >
+                        <img src="service5.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Buisness</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+             <button class="button w-50 mx-auto mb-5">
+                    <a href="#">Know More &#8594;</a>
+             </button>
+
             </div>
 
     </div>
@@ -101,29 +171,54 @@
         
 <!-- Service End -->
 
+<!-- newsletter start -->
+ <!-- <section class="sec1 container-fluid mt-5 pb-5">
+    <h2 class="mt5">Newsletter</h2>
+    <p>Subscribe to our newsletter to get the best tech news in the industry</p>
+    <form class="form-inline mt-2" action="/action_page.php">       
+          <label for="email"></label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">        
+        <button type="submit" class="btn btn-dark ,ml-2">Subscribe</button>
+    </form>
+ </section> -->
+
+<!-- nesletter end -->
+
+
 <!----contact Start-->
-    <div id="contact">
+    <div id="contact " class="offset ">
 
 
     </div>
 
 <!-- contact End -->
 
+<!-- Footer -->
+<footer class="page-footer font-small blue">
 
-
-
-
-
-
-
-
-
-
+    <!-- Copyright -->
+    <div class="footer  footer-copyright text-center py-3">© 2022 Copyright  lophelia.com
     </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+ </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     
 </body>
 </html>
