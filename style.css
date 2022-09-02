@@ -5,7 +5,8 @@ body{
     background-color: white;
     box-sizing: border-box;
     overflow-x: hidden;
-    font-family: 'Lato', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #000; */
 }
 
 .dark-mode {
@@ -76,12 +77,49 @@ ul.nav a:hover { color: rgb(141, 5, 5) !important; }
     
 }
 
-/* ---------------------about start */
+/* ---------------------about---------- start */
 h3{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* button dark */
 
+.dbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.darkbtn{
+    border: 2px solid transparent;
+    width: 300px;
+    padding: 15px 22px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-color: #fff;
+}
+
+.darkbtn a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.darkbtn:hover{
+    border: 2px solid #1ebba3;
+    cursor: pointer;
+}
+
+
+.abt{
+    background-image: url(ameer-basheer-gV6taBJuBTk-unsplash.jpg);
+}
 
 #about .btn{
     border: 2px solid transparent;
@@ -109,6 +147,11 @@ h3{
 
 /*------------ service start----- */
 
+.serv{
+    background-image: url(ameer-basheer-Fp5zvsgwu44-unsplash.jpg);
+    font-family: 'Montserrat', sans-serif;
+}
+
 #service .button{
     border: 2px solid transparent;
     width: 40px;
@@ -132,10 +175,20 @@ h3{
     cursor: pointer;
 }
 
+.card{
+    color: #fff;
+    background-color: #000;
+}
+
+
+/*--------------- footer */
+
 .footer{
     background-image: url(ameer-basheer-Fp5zvsgwu44-unsplash.jpg);
+    font-family: 'Montserrat', sans-serif;
     
 }
+/* -------------end footer */
 
 /* newsletter=-----------*/
 /* 
@@ -171,6 +224,7 @@ h3{
         padding: 10px 0px ;
         
     }
+    
     .heading-content{
         top: 20%;
     }
@@ -198,9 +252,21 @@ h3{
         padding: 7px 0px ;
         
     }
+
+
+    .background{
+        height: 500px;
+        background-image: url(ard2.jpg);
+        display: flex;
+        align-items: center;
+        
+        
+    }
+
+
     
     .heading-content{
-        top: 10%;
+        top: 35%;
     }
     
     .heading-content h5{
@@ -208,7 +274,7 @@ h3{
     }
     
     .heading-content h1{
-        font-size: 2.3em;
+        font-size: 2.8em;
 
     }
     
