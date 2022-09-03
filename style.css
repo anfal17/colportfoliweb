@@ -22,6 +22,7 @@ body{
     height: 5.5em;
 }
 
+
 .navbar{
     text-transform: uppercase;
     font-size: 14px;
@@ -42,10 +43,10 @@ body{
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
-    color: #6a0303;
+    color: #1ebba3;
 }
 
-ul.nav a:hover { color: rgb(141, 5, 5) !important; }
+ul.nav a:hover { color:#1ebba3 ; }
 
 .heading-content{
     position:absolute;
@@ -75,6 +76,11 @@ ul.nav a:hover { color: rgb(141, 5, 5) !important; }
     font-weight: bolder;
     color: rgb(255, 255, 255);
     
+}
+
+.autotyped{
+    font-weight: bolder;
+    font-size: 1em;
 }
 
 /* ---------------------about---------- start */
@@ -212,12 +218,13 @@ h3{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 } */
-
 /* news end--------- */
+
 
 /* media query -------------*/
 
-@media screen and (max-width: 783px) {
+/* ---------tablets------------------ */
+@media screen and (max-width: 840px) {
     /* ----------tablets----- */
     .navbar{
         letter-spacing: 0.1rem;
@@ -226,7 +233,7 @@ h3{
     }
     
     .heading-content{
-        top: 20%;
+        top: 15%;
     }
     
     .heading-content h5{
@@ -234,7 +241,7 @@ h3{
     }
     
     .heading-content h1{
-        font-size: 3em;
+        font-size: 4.5em;
 
     }
     
@@ -245,6 +252,7 @@ h3{
 
 }
 
+/* ------smartphones-------- */
 @media screen and (max-width: 479px) {
     /* ----------smartphones---- */
     .navbar{
@@ -255,31 +263,35 @@ h3{
 
 
     .background{
-        height: 500px;
-        background-image: url(ard2.jpg);
-        display: flex;
-        align-items: center;
+        height: 800px;
+        background-image: url(ameer-basheer-gV6taBJuBTk-unsplash.jpg);
+        /* background-image: url(ard2.jpg); */
+
         
         
     }
 
+.button.navbar-toggler{
+        color: #fff;
+        background-color: #fff;
+}
 
     
     .heading-content{
-        top: 35%;
+        top: 25%;
     }
     
     .heading-content h5{
-        font-size: 1em;
+        font-size: 1.8em;
     }
     
     .heading-content h1{
-        font-size: 2.8em;
+        font-size: 3.5em;
 
     }
     
     .heading-content P{
-        font-size: 0.7em;
+        font-size: 1em;
     
     } 
 }
