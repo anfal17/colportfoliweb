@@ -186,6 +186,9 @@ h3{
     background-color: #000;
 }
 
+.card:hover{
+    border: 3px solid ##ffffff;
+}
 
 /*--------------- footer */
 
